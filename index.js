@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
+app.use(express.urlencoded({extended:true}))
 app.use(express.json())
-
 const data =
     {
         "Development" : [
@@ -121,7 +122,6 @@ const data =
             }
         ]
     }
-
 
 
 app.get('/',(req,res)=>{
