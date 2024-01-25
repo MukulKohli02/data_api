@@ -130,7 +130,9 @@ const data = [
 
 
 app.get('/',(req,res)=>{
-    res.json({"data":data})
+    res.send({
+        message:data
+    })
 })
 
 app.listen(4000, (err)=>{
