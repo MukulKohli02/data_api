@@ -132,7 +132,7 @@ const data = [
 
 app.get('/',(req,res)=>{
     res.send({
-        message:data
+        data:data
     })
 })
 
