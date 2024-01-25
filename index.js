@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 
-const data = [
+const data =
     {
         "Development" : [
             {
@@ -32,9 +32,7 @@ const data = [
                     "alt" : "Software Testing Fundamentals"
                 }
             },
-        ]
-    },
-    {
+        ],
         "Bussiness" : [
             {
                 "id" : "MK101",
@@ -63,9 +61,7 @@ const data = [
                     "alt" : "Project Management Essentials"
                 }
             }
-        ]
-    },
-    {
+        ],
         "Design" : [
             {
                 "id" : "GD601",
@@ -94,9 +90,7 @@ const data = [
                     "alt" : "Fashion Design Principles"
                 }
             }
-        ]
-    },
-    {
+        ],
         "Lifestyle" : [
             {
                 "id" : "CB801",
@@ -127,7 +121,7 @@ const data = [
             }
         ]
     }
-]
+
 
 
 app.get('/',(req,res)=>{
